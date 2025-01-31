@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max J. Salas | Global Entrepeneur</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Max J. Salas - Abogado y emprendedor especializado en movilidad global y expansión internacional de negocios. Ayudo a emprendedores a construir negocios sin fronteras.">
+    <meta name="keywords" content="movilidad global, emprendimiento internacional, negocios globales, startups, Miami">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Max J. Salas | Emprendimiento Global">
+    <meta property="og:description" content="Transformando ideas en negocios globales. Especialista en movilidad internacional y expansión de startups.">
+    <meta property="og:image" content="https://res.cloudinary.com/dtt4hjilc/image/upload/v1738277223/max-profile-avatar-bw_vwzyru.png">
+    
+    <!-- Favicons con tamaños optimizados -->
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dtt4hjilc/image/upload/c_scale,w_32/v1738277223/max-profile-avatar-bw_vwzyru.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dtt4hjilc/image/upload/c_scale,w_32/v1738277223/max-profile-avatar-bw_vwzyru.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dtt4hjilc/image/upload/c_scale,w_180/v1738277223/max-profile-avatar-bw_vwzyru.png">
+    
+    <!-- Fonts con display swap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/inter/3.15.0/inter.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+    <!-- Preload de recursos críticos -->
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/inter/3.15.0/inter.css" as="style">
+<link rel="preconnect" href="https://res.cloudinary.com">
+
+<!-- Schema.org metadata -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Max J. Salas",
+      "jobTitle": "Attorney & Global Mobility Entrepreneur",
+      "description": "Helping entrepreneurs build global businesses",
+      "image": "https://res.cloudinary.com/dtt4hjilc/image/upload/v1738277223/max-profile-avatar-bw_vwzyru.png",
+      "url": "https://maxjsalas.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/maxjsalas/",
+        "https://www.instagram.com/maxjsalas"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Migrative",
+        "url": "https://migrative.us"
+      }
+    }</script>
+
+    </head>
+    <style>
+        /* Variables y configuración base */
+:root {
+    --bg-color: #0A0B1A;
+    --primary-blue: #308EC1;
+    --accent-blue: #61C5FB;
+    --orange: #F48C06;
+    --text-color: #ffffff;
+    --text-secondary: #808B96;
+    
+    /* Nuevas variables para espaciado consistente */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    
+    /* Variables para tipografía responsive */
+    --font-size-base: clamp(1rem, 1vw + 0.75rem, 1.125rem);
+    --font-size-lg: clamp(1.25rem, 1.5vw + 1rem, 1.5rem);
+    --font-size-xl: clamp(2rem, 5vw + 1rem, 4rem);
+}
+
+/* Reset y configuración base */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Optimizaciones de rendimiento */
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Estilos base */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+/* Layout contenedor */
+.container {
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+    padding: var(--spacing-sm);
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-lg) 0;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+/* Enlaces de navegación */
+.nav-email a,
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: var(--font-size-base);
+    transition: color 0.3s ease;
+    padding: var(--spacing-xs);
+    border-radius: 4px;
+}
+
+.nav-email a {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.nav-email i {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.nav-email a:hover,
+.nav-links a:hover {
+    color: var(--text-color);
+}
+
+/* Sección Hero */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-sm);
+}
+
+/* Imagen de perfil */
+.profile-image {
+    width: clamp(80px, 15vw, 120px);
+    height: clamp(80px, 15vw, 120px);
+    border-radius: 50%;
+    margin-bottom: var(--spacing-lg);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+    overflow: hidden;
+    will-change: transform;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Texto hero */
+.greeting {
+    font-size: var(--font-size-lg);
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease 0.2s forwards;
+}
+
+.headline {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-xs);
+    max-width: min(800px, 90%);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease 0.4s forwards;
+    letter-spacing: -0.02em;
+}
+
+.headline span {
+    color: var(--text-secondary);
+}
+
+.subtitle {
+    font-size: var(--font-size-base);
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-xl);
+    max-width: min(600px, 90%);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease 0.6s forwards;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Optimizaciones para accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    .profile-image,
+    .greeting,
+    .headline,
+    .subtitle {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Mejoras para dispositivos móviles */
+@media (max-width: 640px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-links {
+        display: flex;
+        gap: var(--spacing-sm);
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero {
+        padding-top: var(--spacing-lg);
+    }
+}
+
+/* Mejoras de interactividad táctil */
+@media (hover: hover) and (pointer: fine) {
+    .nav-email a:hover,
+    .nav-links a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Optimizaciones de rendimiento */
+@media (prefers-reduced-motion: no-preference) {
+    .nav-email a,
+    .nav-links a {
+        transition: all 0.3s ease;
+        will-change: transform, color;
+    }
+}
+        /* Journey Section */
+        .journey-section {
+            max-width: 48rem;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        .journey-intro {
+            color: var(--text-secondary);
+            font-size: 1.125rem;
+            line-height: 1.8;
+            margin-bottom: 4rem;
+        }
+
+        .journey-intro .highlight {
+            color: var(--text-color);
+        }
+
+        .journey-items {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .journey-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .icon-container {
+            flex-shrink: 0;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(97, 197, 251, 0.1);
+            border-radius: 0.75rem;
+            transition: transform 0.3s ease;
+        }
+
+        .journey-item:hover .icon-container {
+            transform: translateY(-2px);
+        }
+
+        .icon-container i {
+            font-size: 1.25rem;
+            color: var(--accent-blue);
+        }
+
+        .journey-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin: 0 0 0.5rem 0;
+        }
+
+        .journey-text {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Media Queries */
+        @media (min-width: 768px) {
+            .profile-image {
+                width: 100px;
+                height: 100px;
+            }
+
+            .headline {
+                font-size: 3.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .journey-section {
+                padding: 6rem 2rem;
+            }
+
+            .journey-intro {
+                font-size: 1.25rem;
+            }
+
+            .journey-items {
+                gap: 4rem;
+            }
+
+            .journey-title {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .profile-image {
+                width: 120px;
+                height: 120px;
+            }
+
+            .headline {
+                font-size: 4rem;
+            }
+        }
+        /* Mejoras en scroll */
+html {
+    scroll-padding-top: 2rem;
+    scrollbar-gutter: stable;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-blue);
+    border-radius: 4px;
+}
+
+/* Accesibilidad de foco */
+:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 4px;
+}
+
+/* Optimizaciones de imágenes */
+img {
+    loading: lazy;
+    decoding: async;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+<nav>
+    <div class="nav-email">
+        <a href="mailto:maxjsalas@migrative.us">
+            <i class="far fa-envelope"></i>
+            maxjsalas@migrative.us
+        </a>
+    </div>
+    <div class="nav-links">
+        <a href="https://www.linkedin.com/in/maxjsalas/" target="_blank">LinkedIn</a>
+        <span class="divider">/</span>
+        <a href="https://www.instagram.com/maxjsalas" target="_blank">Instagram</a>
+    </div>
+</nav>
+
+<style>
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.nav-email a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-email i {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.nav-email a:hover {
+    color: var(--text-color);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--text-color);
+}
+
+.divider {
+    color: var(--text-secondary);
+    opacity: 0.5;
+}
+
+@media (max-width: 640px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+</style>
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="profile-image">
+                <img src="https://res.cloudinary.com/dtt4hjilc/image/upload/v1738277223/max-profile-avatar-bw_vwzyru.png" alt="Max J. Salas">
+            </div>
+            <p class="greeting">Hi, I'm Max 👋</p>
+            <h1 class="headline">
+                turning ideas into <span>global</span> businesses
+            </h1>
+            <p class="subtitle">
+                Attorney, entrepreneur, family man, and world citizen
+            </p>
+        </section>
+
+        <!-- Journey Section -->
+        <section class="journey-section">
+            <p class="journey-intro">
+                From a <span class="highlight">Venezuelan attorney</span> to a global mobility entrepreneur in Miami's vibrant ecosystem, I've learned that great ideas know no borders. Today, I help dreamers and creators build their businesses anywhere in the world.
+            </p>
+
+            <div class="journey-items">
+                <div class="journey-item">
+                    <div class="icon-container">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="journey-title">Vision</h3>
+                        <p class="journey-text">
+                            Building an ecosystem where entrepreneurs can expand and develop businesses without limitations. Whether you have a visa or not, your ideas deserve to grow globally.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="journey-item">
+                    <div class="icon-container">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="journey-title">Impact</h3>
+                        <p class="journey-text">
+                            Working with entrepreneurs from Colombia, Brazil, Ecuador, Peru, Russia, Ukraine, and Australia has shown me that innovation truly knows no boundaries.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="journey-item">
+                    <div class="icon-container">
+                        <i class="fas fa-scale-balanced"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="journey-title">Experience</h3>
+                        <p class="journey-text">
+                            My legal background combined with a passion for global mobility allows me to see beyond traditional business constraints, helping startups navigate their international journey.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="journey-item">
+                    <div class="icon-container">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="journey-title">Values</h3>
+                        <p class="journey-text">
+                            Rooted in family values and driven by Miami's entrepreneurial spirit, I believe in creating collaborative, borderless opportunities for business growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <!-- Migrative Section -->
+<section class="migrative-section">
+    <div class="migrative-content">
+        <div class="migrative-header">
+            <img src="https://res.cloudinary.com/dtt4hjilc/image/upload/v1733784593/logo-c-h_1_1_fqcoor.png" alt="Migrative Logo" class="migrative-logo">
+        </div>
+        <p class="migrative-description">
+            We empower entrepreneurs to turn their first business idea into a global reality. From that crucial first legal document to your company's international expansion, we're here to navigate the journey with you.
+        </p>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">7+</span>
+                <span class="stat-label">Countries Served</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100+</span>
+                <span class="stat-label">Startups Launched</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Global Support</span>
+            </div>
+        </div>
+        <a href="https://migrative.us" target="_blank" class="migrative-link">
+            Learn more <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+</section>
+
+<style>
+.migrative-section {
+    padding: 4rem 1.5rem;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.migrative-content {
+    background: rgba(97, 197, 251, 0.05);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    border: 1px solid rgba(97, 197, 251, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.migrative-content:hover {
+    transform: translateY(-2px);
+}
+
+.migrative-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.migrative-logo {
+    height: 2rem;
+    width: auto;
+    object-fit: contain;
+}
+
+.migrative-description {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--accent-blue);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.migrative-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: gap 0.3s ease;
+}
+
+.migrative-link i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.migrative-link:hover {
+    gap: 0.75rem;
+}
+
+.migrative-link:hover i {
+    transform: translateX(2px);
+}
+
+@media (min-width: 768px) {
+    .migrative-section {
+        padding: 6rem 2rem;
+    }
+
+    .migrative-content {
+        padding: 3rem;
+    }
+
+    .migrative-logo {
+        height: 2.5rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        font-size: 1rem;
+    }
+}
+</style>
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="cta-icon">
+        <i class="fas fa-handshake"></i>
+    </div>
+    <p class="cta-greeting">Let's talk</p>
+    <h2 class="cta-title">
+        tell me about your <span>next</span> project
+    </h2>
+    <div class="cta-buttons">
+        <a href="mailto:maxjsalas@migrative.us" class="cta-button">
+            <i class="far fa-envelope"></i>
+            maxjsalas@migrative.us
+        </a>
+    </div>
+</section>
+
+<style>
+.cta-section {
+    padding: 6rem 1.5rem;
+    max-width: 48rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: rgba(97, 197, 251, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.cta-icon i {
+    font-size: 1.25rem;
+    color: var(--accent-blue);
+}
+
+.cta-greeting {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease 0.2s forwards;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 2.5rem;
+    line-height: 1.2;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease 0.4s forwards;
+}
+
+.cta-title span {
+    color: var(--text-secondary);
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease 0.6s forwards;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.cta-button:hover {
+    color: var(--text-color);
+}
+
+.cta-button i {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+    .cta-section {
+        padding: 8rem 2rem;
+    }
+
+    .cta-title {
+        font-size: 3.5rem;
+    }
+
+    .cta-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .cta-icon i {
+        font-size: 1.5rem;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-copyright">
+            © 2025 All rights reserved.
+        </div>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/maxjsalas/" target="_blank">LinkedIn</a>
+            <span class="divider">/</span>
+            <a href="https://www.instagram.com/maxjsalas/" target="_blank">Instagram</a>
+        </div>
+    </div>
+</footer>
+
+<style>
+.footer {
+    padding: 2rem 1.5rem;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--text-color);
+}
+
+.divider {
+    color: var(--text-secondary);
+    opacity: 0.5;
+}
+
+@media (max-width: 640px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Intersection Observer para lazy loading
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-enter-active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+    
+        // Aplicar a elementos con clase fade-enter
+        document.querySelectorAll('.fade-enter').forEach(el => {
+            observer.observe(el);
+        });
+    
+        // Smooth scroll para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
